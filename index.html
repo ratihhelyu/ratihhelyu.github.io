@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>KOPI NUSANTARA</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="title" content="Festival Coffee 2023" />
+  <meta name="description" content="Kopi Nusantara" />
+  <meta name="Googlebot" content="noindex">
+  <link rel="stylesheet" href="./assets/css/style.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />  -->
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+</style>
+
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="kn-top">
+    <div class="kn-bar kn-white kn-card" id="myNavbar">
+      <div class="kn-logo-item kn-wide" aria-label="logo">
+        <img src="https://cdn.okezone.com/underwood/revamp/2023/kopi_nusantara/assets/img/logo.png" alt="" />
+      </div>
+      <!-- Right-sided navbar links -->
+      <div class="kn-left kn-hide-small">
+        <!-- update link sosmed -->
+        <a href="https://www.instagram.com/okezonecom/" class="kn-bar-item sosmed kn-button" role="link" aria-label="instagram"><img
+            src="./assets/img/icon-ig.png" width="20" height="20" alt="" style="width: 20px; height: 20px" /></a>
+        <a href="https://www.instagram.com/okezonecom/" class="kn-bar-item sosmed kn-button" role="link" aria-label="facebook"><img
+            src="./assets/img/icon-fb.png" width="20" height="20" alt="" style="width: 20px; height: 20px" /></a>
+        <a href="https://twitter.com/okezonenews" class="kn-bar-item sosmed kn-button" role="link" aria-label="X"><img src="./assets/img/icon-x.png"
+            width="20" height="20" alt="" style="width: 20px; height: 20px" /></a>
+        <a href="https://www.youtube.com/user/okezoneindonesia" class="kn-bar-item sosmed kn-button" role="link" aria-label="youtube"><img
+            src="./assets/img/icon-yt.png" width="20" height="20" alt="" style="width: 20px; height: 20px" /></a>
+        <a href="https://www.tiktok.com/@okezonecom?_t=8UA2ReJzaxW&_r=1" class="kn-bar-item sosmed kn-button" role="link" aria-label="tiktok"><img
+            src="./assets/img/icon-tt.png" width="20" height="20" alt="" style="width: 20px; height: 20px" /></a>
+      </div>
+      <div class="kn-bar-item" onclick="openMenu()">
+        <div class="container btn-navigasi" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+
+      <div class="kn-right kn-hide-small">
+        <a href="#about" class="kn-bar-item kn-button" aria-label="read more about">ABOUT</a>
+        <a href="#event" class="kn-bar-item kn-button" aria-label="read more event">EVENT</a>
+        <a href="#article" class="kn-bar-item kn-button" aria-label="read more article">ARTICLE</a>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- Header -->
+  <div class="header" id="about">
+    <div class="left-header">
+      <img src="assets/img/okezone-logo.png" width="127" height="16" alt="">
+    </div>
+    <div class="right-header">
+      <div class="right-header-content">
+        <div class="right-header-title">Coffee Festival 2023</div>
+        <p class="right-header-text">
+          Okezone Coffee Festival 2023 adalah ajang untuk merayakan pesona kopi Indonesia. 
+          Festival ini akan menghadirkan berbagai macam aktivitas, seperti pameran kopi, 
+          workshop kopi, kompetisi kopi, dan acara seru lainnya. Pengunjung dapat menikmati 
+          berbagai macam jenis kopi dari berbagai daerah di Indonesia, workshop kopi dari 
+          para ahli untuk mempelajari lebih lanjut tentang cara menyeduh dan menikmati kopi. 
+          Serta informasi lengkap tentang dunia kopi semuanya disajikan hanya untuk kamu 
+          di Okezone Coffee Festival 2023
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Side Bar -->
+  <div class="side-bar-container kn-animate-right" style="display: none;" id="mySidebar">
+    <div class="menu-wrap">
+      <a href="#about" onclick="closeMenu()" class="menu-item" aria-label="read more about">ABOUT</a>
+      <a href="#event" onclick="closeMenu()" class="menu-item" aria-label="read more event">EVENT</a>
+      <a href="#article" onclick="closeMenu()" class="menu-item" aria-label="read more article">ARTICLE</a>
+    </div>
+    <div class="sosmed-wrap">
+      <!-- update link sosmed -->
+      <a href="https://www.instagram.com/okezonecom/" class="kn-bar-item sosmed kn-button" role="link" aria-label="instagram"><img
+          src="./assets/img/icon-ig-sidebar.png" width="20" height="20" alt="" style="width: 20px; height: 20px" /></a>
+      <a href="https://www.instagram.com/okezonecom/" class="kn-bar-item sosmed kn-button" role="link" aria-label="facebook"><img
+          src="./assets/img/icon-fb-sidebar.png" width="20" height="20" alt="" style="width: 20px; height: 20px" /></a>
+      <a href="https://twitter.com/okezonenews" class="kn-bar-item sosmed kn-button" role="link" aria-label="X"><img
+          src="./assets/img/icon-x-sidebar.png" width="20" height="20" alt="" style="width: 20px; height: 20px" /></a>
+      <a href="https://www.youtube.com/user/okezoneindonesia" class="kn-bar-item sosmed kn-button" role="link" aria-label="youtube"><img
+          src="./assets/img/icon-yt-sidebar.png" width="20" height="20" alt="" style="width: 20px; height: 20px" /></a>
+      <a href="https://www.tiktok.com/@okezonecom?_t=8UA2ReJzaxW&_r=1" class="kn-bar-item sosmed kn-button" role="link" aria-label="tiktok"><img
+          src="./assets/img/icon-tt-sidebar.png" width="20" height="20" alt="" style="width: 20px; height: 20px" /></a>
+    </div>
+  </div>
+
+  <!--Rangkaian Acara Section -->
+  <div class="kn-container" id="event">
+    <h3 class="kn-center">RANGKAIAN ACARA</h3>
+
+    <div class="rangkaian-card-wrap">
+      <a href="#1" aria-label="coffee awrding" role="link" style="text-decoration: none;">
+        <div class="rangkaian-card-item">
+          <div class="rangkaian-card-img">
+            <img src="./assets/img/img1.jpg" width="640" height="360" alt="" />
+          </div>
+          <div class="rangkaian-card-text">
+            <div class="title-card"><span>Coffee</span> Awarding</div>
+            <p class="kn-tgl-card">24 Oktober</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#2" aria-label="coffee competiton" role="link" style="text-decoration: none;">
+        <div class="rangkaian-card-item">
+          <div class="rangkaian-card-img">
+            <!-- update img event -->
+            <img src="./assets/img/img-competiton.jpg" width="640" height="360" alt="" />
+          </div>
+          <div class="rangkaian-card-text">
+            <div class="title-card"><span>Coffee</span> Competition</div>
+            <p class="kn-tgl-card">12 November</p>
+          </div>
+        </div>
+      </a>
+      <a href="#3" aria-label="coffee chit chat" role="link" style="text-decoration: none;">
+        <div class="rangkaian-card-item">
+          <div class="rangkaian-card-img">
+            <!-- update img event -->
+            <img src="./assets/img/img-chitchat.jpg" width="640" height="360" alt="" />
+          </div>
+          <div class="rangkaian-card-text">
+            <div class="title-card"><span>Coffee</span> Chit Chat</div>
+            <p class="kn-tgl-card">12 November</p>
+          </div>
+        </div>
+      </a>
+      <a href="#4" aria-label="coffee display" role="link" style="text-decoration: none;">
+        <div class="rangkaian-card-item">
+          <div class="rangkaian-card-img">
+            <!-- update img event -->
+            <img src="./assets/img/img-display.jpg" width="640" height="360" alt="" />
+          </div>
+          <div class="rangkaian-card-text">
+            <div class="title-card"><span>Coffee</span> Display</div>
+            <p class="kn-tgl-card">24 Oktober</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- filter Section -->
+  <div class="kn-light-grey" style="padding: 0px 16px" id="article">
+    <h3 class="kn-center-2">All About Coffee</h3>
+    <div class="wrap-filter scrollmenu">
+      <!-- <div class="filter-btn">Semua</div> -->
+      <div class="filter-btn active">Artikel</div>
+      <div class="filter-btn">Video</div>
+      <div class="filter-btn">Foto</div>
+      <!-- <div class="filter-btn">Infografis</div> -->
+    </div>
+    <!------ UPDATE LIST ARTICLE ----->
+    <div class="cont-photo-card-1" id="box-news">
+      <div class="jscrolll-inner">
+        <a href="#" aria-label="article" role="link" style="text-decoration: none;">
+          <div class="photo-card-item">
+            <div class="photo-card">
+              <img src="./assets/img/img1.jpg" alt="" />
+              <div class="category">
+                <img src="assets/img/icon-video.png" width="32" height="32" alt="">
+              </div>
+            </div>
+            <div class="photo-card-text">
+              <p class="text">
+                Benarkah Kopi dengan Gula Baik untuk Kesehatan?
+                <br />Ini Faktanya
+              </p>
+ 
+            </div>
+          </div>
+        </a>
+        <a href="#" aria-label="article" role="link" style="text-decoration: none;">
+          <div class="photo-card-item">
+            <div class="photo-card">
+              <img src="./assets/img/img1.jpg" alt="" />
+            </div>
+            <div class="photo-card-text">
+              <p class="text">
+                Benarkah Kopi dengan Gula Baik untuk Kesehatan?
+                <br />Ini Faktanya
+              </p>
+ 
+            </div>
+          </div>
+        </a>
+        <a href="#" aria-label="article" role="link" style="text-decoration: none;">
+          <div class="photo-card-item">
+            <div class="photo-card">
+              <img src="./assets/img/img2.jpg" alt="" />
+            </div>
+            <div class="photo-card-text">
+              <p class="text">
+                Benarkah Kopi dengan Gula Baik untuk Kesehatan?
+                <br />Ini Faktanya
+              </p>
+ 
+            </div>
+          </div>
+        </a>
+        <a href="#" aria-label="article" role="link" style="text-decoration: none;">
+          <div class="photo-card-item">
+            <div class="photo-card">
+              <img src="./assets/img/img2.jpg" alt="" />
+            </div>
+            <div class="photo-card-text">
+              <p class="text">
+                Benarkah Kopi dengan Gula Baik untuk Kesehatan?
+                <br />Ini Faktanya
+              </p>
+ 
+            </div>
+          </div>
+        </a>
+        <a href="#" aria-label="article" role="link" style="text-decoration: none;">
+          <div class="photo-card-item">
+            <div class="photo-card">
+              <img src="./assets/img/img1.jpg" alt="" />
+              <div class="category">
+                <img src="assets/img/icon-infog.png" width="32" height="32" alt="">
+              </div>
+            </div>
+            <div class="photo-card-text">
+              <p class="text">
+                Benarkah Kopi dengan Gula Baik untuk Kesehatan?
+                <br />Ini Faktanya
+              </p>
+ 
+            </div>
+          </div>
+        </a>
+        <a href="#" aria-label="article" role="link" style="text-decoration: none;">
+          <div class="photo-card-item">
+            <div class="photo-card">
+              <img src="./assets/img/img2.jpg" alt="" />
+            </div>
+            <div class="photo-card-text">
+              <p class="text">
+                Benarkah Kopi dengan Gula Baik untuk Kesehatan?
+                <br />Ini Faktanya
+              </p>
+ 
+            </div>
+          </div>
+        </a>
+        <a href="#" aria-label="article" role="link" style="text-decoration: none;">
+          <div class="photo-card-item">
+            <div class="photo-card">
+              <img src="./assets/img/img1.jpg" alt="" />
+              <div class="category">
+                <img src="assets/img/icon-foto.png" width="32" height="32" alt="">
+              </div>
+            </div>
+            <div class="photo-card-text">
+              <p class="text">
+                Benarkah Kopi dengan Gula Baik untuk Kesehatan?
+                <br />Ini Faktanya
+              </p>
+ 
+            </div>
+          </div>
+        </a>
+        <a href="#" aria-label="article" role="link" style="text-decoration: none;">
+          <div class="photo-card-item">
+            <div class="photo-card">
+              <img src="./assets/img/img2.jpg" alt="" />
+            </div>
+            <div class="photo-card-text">
+              <p class="text">
+                Benarkah Kopi dengan Gula Baik untuk Kesehatan?
+                <br />Ini Faktanya
+              </p>
+ 
+            </div>
+          </div>
+        </a>
+        <a href="#" aria-label="article" role="link" style="text-decoration: none;">
+          <div class="photo-card-item">
+            <div class="photo-card">
+              <img src="./assets/img/img1.jpg" alt="" />
+              <div class="category">
+                <img src="assets/img/icon-foto.png" width="32" height="32" alt="">
+              </div>
+            </div>
+            <div class="photo-card-text">
+              <p class="text">
+                Benarkah Kopi dengan Gula Baik untuk Kesehatan?
+                <br />Ini Faktanya
+              </p>
+ 
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      <div class=" more-btn" role="button">
+        <a class="btn-lmorex" href="loadmore.html" name="link" aria-label="load more" role="button" style="text-decoration: none;">
+          Load More
+        </a>
+      </div>
+    </div>
+    <!-------END LIST ARTICLE -------->
+  </div>
+
+  <!-- Footer -->
+  <footer class="kn-center-footer padding-footer">
+    <p class="copyright">Copyright @ 2023 Coffee Festival - MNC Media</p>
+  </footer>
+
+  <script type="text/javascript" src="assets/js/jquery-3.7.1.min.js"></script>
+  <script>
+    var mySidebar = document.getElementById("mySidebar");
+    function openMenu() {
+      if (mySidebar.style.display === "block") {
+        mySidebar.style.display = "none";
+      } else {
+        mySidebar.style.display = "block";
+      }
+    }
+    function closeMenu() {
+      mySidebar.style.display = "none";
+      $(".btn-navigasi").removeClass("change");
+    }
+
+
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+
+
+
+
+
+// jscroll
+  (function(b){b.jscroll={defaults:{debug:false,autoTrigger:true,autoTriggerUntil:false,loadingHtml:"<small>Loading...</small>",padding:0,nextSelector:"a:last",contentSelector:"",pagingSelector:"",callback:false}};var a=function(e,g){var o=e.data("jscroll"),n=(typeof g==="function")?{callback:g}:g,p=b.extend({},b.jscroll.defaults,n,o||{}),c=(e.css("overflow-y")==="visible"),l=e.find(p.nextSelector).first(),v=b(window),h=b("body"),q=c?v:e,m=b.trim(l.attr("href")+" "+p.contentSelector),k=function(){var x=b(p.loadingHtml).filter("img").attr("src");if(x){var w=new Image();w.src=x}},r=function(){if(!e.find(".jscroll-inner").length){e.contents().wrapAll('<div class="jscroll-inner" />')}},d=function(w){var x;if(p.pagingSelector){w.closest(p.pagingSelector).hide()}else{x=w.parent().not(".jscroll-inner,.jscroll-added").addClass("jscroll-next-parent").hide();if(!x.length){w.wrap('<div class="jscroll-next-parent" />').parent().hide()}}},j=function(){return q.unbind(".jscroll").removeData("jscroll").find(".jscroll-inner").children().unwrap().filter(".jscroll-added").children().unwrap()},i=function(){r();var D=e.find("div.jscroll-inner").first(),B=e.data("jscroll"),C=parseInt(e.css("borderTopWidth"),10),y=isNaN(C)?0:C,x=parseInt(e.css("paddingTop"),10)+y,A=c?q.scrollTop():e.offset().top,z=D.length?D.offset().top:0,w=Math.ceil(A-z+q.height()+x);if(!B.waiting&&w+p.padding>=D.outerHeight()){f("info","jScroll:",D.outerHeight()-w,"from bottom. Loading next request...");return u()}},s=function(w){w=w||e.data("jscroll");if(!w||!w.nextHref){f("warn","jScroll: nextSelector not found - destroying");j();return false}else{t();return true}},t=function(){var w=e.find(p.nextSelector).first();if(!w.length){return}if(p.autoTrigger&&(p.autoTriggerUntil===false||p.autoTriggerUntil>0)){d(w);if(h.height()<=v.height()){i()}q.unbind(".jscroll").bind("scroll.jscroll",function(){return i()});if(p.autoTriggerUntil>0){p.autoTriggerUntil--}}else{q.unbind(".jscroll");w.bind("click.jscroll",function(){d(w);u();return false})}},u=function(){var x=e.find("div.jscroll-inner").first(),w=e.data("jscroll");w.waiting=true;x.append('<div class="jscroll-added" />').children(".jscroll-added").last().html('<div class="jscroll-loading">'+p.loadingHtml+"</div>");return e.animate({scrollTop:x.outerHeight()},0,function(){x.find("div.jscroll-added").last().load(w.nextHref,function(A,z){if(z==="error"){return j()}var y=b(this).find(p.nextSelector).first();w.waiting=false;w.nextHref=y.attr("href")?b.trim(y.attr("href")+" "+p.contentSelector):false;b(".jscroll-next-parent",e).remove();s();if(p.callback){p.callback.call(this)}f("dir",w)})})},f=function(w){if(p.debug&&typeof console==="object"&&(typeof w==="object"||typeof console[w]==="function")){if(typeof w==="object"){var y=[];for(var x in w){if(typeof console[x]==="function"){y=(w[x].length)?w[x]:[w[x]];console[x].apply(console,y)}else{console.log.apply(console,y)}}}else{console[w].apply(console,Array.prototype.slice.call(arguments,1))}}};e.data("jscroll",b.extend({},o,{initialized:true,waiting:false,nextHref:m}));r();k();t();b.extend(e.jscroll,{destroy:j});return e};b.fn.jscroll=function(c){return this.each(function(){var f=b(this),e=f.data("jscroll"),d;if(e&&e.initialized){return}d=new a(f,c)})}})(jQuery);
+
+$('#box-news').jscroll({
+  autoTrigger: false,
+  loadingHtml: '<div class="loader"><img alt="" src="https://cdn.okezone.com/news/news_2015a/img/ajax-loader.gif" /></div>',
+  nextSelector: 'a.btn-lmorex:last',
+});
+
+  </script>
+
+</body>
+
+</html>
